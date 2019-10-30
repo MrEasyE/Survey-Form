@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Mock Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="./static/style.css">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 id="title">Mock Survey Form</h1>
+                <p id="description">Thanks for taking the time to help improve the platform!</p>
+            </div>
+
+            <form id="survey-form">
+                
+                <label for="name" id="name-label">Name</label>
+                <input type="text" required="true" id="name" placeholder="Your name">
+                
+                <label for="email" id="email-label">Email</label>
+                <input type="email" required="true" id="email" placeholder="Your email address">
+                
+                <label for="number" id="number-label">Age</label>
+                <input type="number" required="false" id="number" min="18" max="100" placeholder="Your age">
+
+                <label for="dropdown" id="option-label">Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option></option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>Full time learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="radio" id="radio-label">Would you recommend 100 Days of Code to a friend?</label>
+                <label for="Yes"><input type="radio" required="false" name="wouldYouRecommend" value="Yes" id="Yes">Yes, for sure</label>
+                <label for="No"><input type="radio" required="false" name="wouldYouRecommend" value="No" id="No">No, probably not</label>
+                <label for="Maybe"><input type="radio" required="false" name="wouldYouRecommend" value="Maybe" id="Maybe">Not sure</label>
+
+                <label for="checkboxes" id="checkboxes-label">What would you like to see improved? <em>(Check all that apply)</em></label>
+                <label for="FrontEndProjects"><input type="checkbox" name="whatWouldYouImprove" value="Front-end projects" id="FrontEndProjects">Front-end Projects</label>
+                <label for="BackEndProjects"><input type="checkbox" name="whatWouldYouImprove" value="Back-end projects" id="BackEndProjects">Back-end Projects</label>
+                <label for="DataVisualization"><input type="checkbox" name="whatWouldYouImprove" value="Data Visualization" id="DataVisualization">Data Visualization</label>
+                <label for="Challenges"><input type="checkbox" name="whatWouldYouImprove" value="Challenges" id="Challenges">Challenges</label>
+                <label for="OpenSourceCommunity"><input type="checkbox" name="whatWouldYouImprove" value="Open Source Community" id="OpenSourceCommunity">Open Source Community</label>
+                <label for="Gitterhelprooms"><input type="checkbox" name="whatWouldYouImprove" value="Gitter help rooms" id="Gitterhelprooms">Gitter help rooms</label>
+                <label for="Videos"><input type="checkbox" name="whatWouldYouImprove" value="Videos" id="Videos">Videos</label>
+                <label for="CityMeetups"><input type="checkbox" name="whatWouldYouImprove" value="City Meetups" id="CityMeetups">City Meetups</label>
+                <label for="Wiki"><input type="checkbox" name="whatWouldYouImprove" value="Wiki" id="Wiki">Wiki</label>
+                <label for="Forum"><input type="checkbox" name="whatWouldYouImprove" value="Forum" id="Forum">Forum</label>
+                <label for="AdditionalCourses"><input type="checkbox" name="whatWouldYouImprove" value="Additional Courses" id="AdditionalCourses">Additional Courses</label>
+
+                <label for="textarea" id="textarea-label">Any comments or suggestions?</label>
+                <textarea id="textarea" placeholder="Add any comments here"></textarea>
+
+                <button id="submit">Submit</button>
+
+            </form>
+        </div>       
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </body>
+</html>

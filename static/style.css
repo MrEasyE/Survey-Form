@@ -1,0 +1,102 @@
+
+body {
+    
+    font-family: 'Work Sans', sans-serif;
+    background-image: url('./background.jpg');
+    opacity: 0.95;
+
+}
+
+.header {
+
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+#survey-form {
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: darkcyan;
+    padding: 25px 10px 25px 10px;
+    border-radius: 5px;
+
+}
+
+h1 {
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-top: 25px;
+}
+
+#description {
+    margin: auto;
+    padding-bottom: 25px;
+    font-size: larger;
+}
+
+label {
+    
+    display: inline-flex;
+    margin: 0px 0px 0px 10px;
+    color: white;
+    font-size: larger;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+input,
+select {
+
+    display: flex;
+    margin: 3px 10px 20px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    padding: 10px;
+
+}
+
+textarea {
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: darkslateblue;
+    padding: 10px;
+    font-size: larger;
+    margin: 0px 10px 0px 10px;
+}
+
+em {
+    font-size: smaller;
+    color: lightcoral;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
